@@ -14,12 +14,14 @@
     background: #fff;
     flex-wrap: wrap;
     gap: 15px;
+
 }
 
 .brand {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-shrink: 0;
 }
 
 .brand img {
@@ -43,6 +45,7 @@
     width: 250px;
     border: none;
     outline: none;
+    min-width: 140px;
 }
 
 .search-bar select {
@@ -50,6 +53,7 @@
     border: none;
     outline: none;
     border-left: 1px solid #ddd;
+    background: #fff;
 }
 
 .search-bar button {
@@ -67,6 +71,7 @@
     align-items: center;
     gap: 25px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .actions a {
@@ -82,18 +87,19 @@
 .actions img {
     width: 25px;
     margin-bottom: 5px;
-
 }
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     padding: 12px 40px;
     font-size: 14px;
     color: #333;
     border-bottom: 1px solid #e7e7e7;
     border-top: 2px solid #e7e7e7;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .nav-links {
@@ -102,6 +108,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .nav-links img {
@@ -111,14 +119,15 @@
     cursor: pointer;
 }
 
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
     margin-right: 30px;
     cursor: pointer;
     font-size: 14px;
     color: #333;
 }
-.nav-links li select{
+
+.nav-links li select {
     margin-right: 30px;
     cursor: pointer;
     font-size: 14px;
@@ -126,12 +135,14 @@
     border: none;
     padding: 5px 0;
     outline: none;
-    /* appearance: none; */
+    appearance: none;
 }
-.nav-links li:hover a{
+
+.nav-links li:hover a {
     color: #000;
     font-weight: bold;
 }
+
 .nav-links li select:hover {
     font-weight: normal;
 }
@@ -183,13 +194,16 @@
     height: 20px;
     border-radius: 3px;
 }
-.lang-ship{
+
+.lang-ship {
     display: flex;
     align-items: center;
     gap: 24px;
     font-size: 14px;
+    flex-wrap: wrap;
 }
-.custom-select{
+
+.custom-select {
     border: none;
     background: transparent;
     color: #333;
@@ -198,6 +212,163 @@
     cursor: pointer;
     outline: none;
 }
+
 .custom-select:hover {
     color: #000;
+}
+
+.news-letter {
+    text-align: center;
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.news-letter h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-letter p {
+    font-size: 14px;
+    color: #666;
+    max-width: 530px;
+    margin: 0 auto 20px auto;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-wrapper {
+    flex: 1;
+    min-width: 220px;
+    max-width: 350px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #0D6EFD;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    padding: 12px 28px;
+    background: #0D6EFD;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+    background: #0b5dd6;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 30px;
+}
+
+.footer-brand {
+    width: 22%;
+}
+
+.footer-brand p {
+    color: #666;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #777;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: black;
+}
+
+.footer-app h4 {
+    margin-bottom: 10px;
+}
+
+.footer-app .app-btn {
+    display: block;
+    width: 120px;
+    margin-bottom: 10px;
+}
+.footer-bottom {
+    background: #f3f4f6;      /* light grey background */
+    padding: 15px 0;
+    width: 100%;
+}
+
+.footer-bottom .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 60px;          /* space from left + right */
+}
+
+.bottom-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-flex p {
+    color: #555;
+    font-size: 14px;
+}
+
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lang-selector img {
+    width: 20px;
+    height: 14px;
+    border-radius: 2px;
+}
+
+.lang-selector select {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.lang-selector select:hover {
+    color: #000;
+    font-weight: 500;
 }
