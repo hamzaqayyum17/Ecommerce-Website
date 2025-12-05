@@ -334,7 +334,7 @@
 .footer-bottom .container {
     max-width: 1200px;
     margin: auto;
-    padding: 0 60px;          /* space from left + right */
+    padding: 0 50px;          /* space from left + right */
 }
 
 .bottom-flex {
