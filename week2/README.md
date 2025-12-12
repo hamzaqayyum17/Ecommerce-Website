@@ -7,6 +7,7 @@ Build the desktop version of the Home Page based on Figma.
 - Hero Section
 - Category-Section
 - Inquiry-section
+- Recommended-section
 
 # GitHub Repository
 https://github.com/hamzaqayyum17/Ecommerce-Website/tree/main/week2
