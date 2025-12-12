@@ -225,3 +225,130 @@ main {
         padding-left: 0;
     }
 }
+.category-section {
+    width: 90%;
+    max-width: 1250px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;    
+}
+.category-block {
+    display: flex;
+    background: white;
+    /* border-radius: 12px; */
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+.category-left {
+    width: 27%;
+    padding: 25px;
+    background: #f7f2e7;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 12px 0 0 12px; */
+    /* justify-content: space-between; */
+    /* background-size: contain;      */
+    /* background-repeat: no-repeat; */
+    /* background-position: right bottom; */
+    /* Light wash overlay */
+    /* background-color: #fdfdfd; */
+}
+.category-left h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.category-left button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.category-grid{
+    width: 73%;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.category-grid .item {
+    width: 25%;
+    padding: 15px;
+    text-align: center;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.home_and_outdoor{
+    background-image: url("../assets/Image/backgrounds/Group 969.png");
+}
+
+.electronics_gadgets {
+    background-image: url("../assets/Image/backgrounds/image 98.png");
+}
+
+.category-grid .item:nth-child(4),
+.category-grid .item:nth-child(8) {
+    border-right: none;
+}
+
+.category-grid .item:nth-child(n+5) {
+    border-bottom: none;
+}
+
+.category-grid .item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.category-grid .item h4 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.category-grid .item p {
+    font-size: 12px;
+    color: #777;
+}
+
+.category-grid .item:hover {
+    background: #f8faff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+@media (max-width: 992px) {
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 65%;
+    }
+    .category-left {
+        width: 35%;
+    }
+}
+@media (max-width: 768px) {
+    .category-block {
+        flex-direction: column;
+    }
+
+    .category-left {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .category-grid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
