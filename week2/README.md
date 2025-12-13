@@ -8,6 +8,8 @@ Build the desktop version of the Home Page based on Figma.
 - Category-Section
 - Inquiry-section
 - Recommended-section
+- Extra-section
+- Suppliers-section
 
 # GitHub Repository
 https://github.com/hamzaqayyum17/Ecommerce-Website/tree/main/week2
