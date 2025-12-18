@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../week1/style.css">
+    <link rel="stylesheet" href="../week2/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="brand">
+                <img src="../assets/Layout/Brand/logo-colored.png" alt="Brand Logo">
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>All category</option>
+                    <option>Category 1</option>
+                    <option>Category 2</option>
+                </select>
+                <button>Search</button>
+            </div>
+
+            <div class="actions">
+                <a href="profile.html">
+                    <img src="../assets/actions/person.png" alt="Profile">
+                    <span>Profile</span>
+                </a>
+                <a href="messages.html">
+                    <img src="../assets/actions/messages.png" alt="Message">
+                    <span>Message</span>
+                </a>
+                <a href="orders.html">
+                    <img src="../assets/actions/orders.png" alt="Orders">
+                    <span>Orders</span>
+                </a>
+                <a href="cart.html">
+                    <img src="../assets/actions/cart.png" alt="My Cart">
+                    <span>My cart</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <ul class="nav-links">
+                <img src="../assets/menu.png" alt="Menu">
+                <li><a href="#">All category</a></li>
+                <li><a href="#">Hot offers</a></li>
+                <li><a href="#">Gift boxes</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Menu item</a></li>
+                <li>
+                    <select>
+                        <option value="1">Help</option>
+                        <option value="2">Support</option>
+                        <option value="3">Contact</option>
+                        <option value="4">FAQ</option>
+                    </select>
+                </li>
+
+            </ul>
+            <div class="lang-ship">
+                <select class="custom-select">
+                    <option>English, USD</option>
+                    <option>German, EUR</option>
+                    <option>French, EUR</option>
+                </select>
+
+                <select class="custom-select">
+                    <option>Ship to AE<img src="../assets/Layout1/Image/flags/AE@2x.png" alt=""></option>
+                    <option>Ship to CN<img src="../assets/Layout1/Image/flags/CN@2x.png" alt=""></option>
+                    <option>Ship to DE<img src="../assets/Layout1/Image/flags/DE@2x.png" alt=""></option>
+                    <option>Ship to DK<img src="../assets/Layout1/Image/flags/DK@2x.png" alt=""></option>
+                    <option>Ship to FR<img src="../assets/Layout1/Image/flags/FR@2x.png" alt=""></option>
+                </select>
+            </div>
+        </div>
+
+    </header>
+    <div class="breadcrumb-wrapper">
+        <div class="breadcrumb">
+            <span>Home</span>
+            <span>›</span>
+            <span>Clothings</span>
+            <span>›</span>
+            <span>Men's wear</span>
+            <span>›</span>
+            <span class="active">Summer clothing</span>
+        </div>
+    </div>
+
+    <main class="product-list-page">
+        <div class="product-list-container">
+
+            <!-- LEFT SIDEBAR -->
+            <aside class="filters-sidebar">
+
+                <!-- CATEGORY -->
+                <div class="filter-block">
+                    <div class="filter-title">
+                        <h4>Category</h4>
+                    </div>
+
+                    <ul class="filter-list">
+                        <li>Mobile accessory</li>
+                        <li>Electronics</li>
+                        <li>Smartphones</li>
+                        <li>Modern tech</li>
+                        <li class="see-all">See all</li>
+                    </ul>
+                </div>
+
+                <!-- BRANDS -->
+                <div class="filter-block">
+                    <div class="filter-title">
+                        <h4>Brands</h4>
+                    </div>
+
+                    <label class="check-item">
+                        <input type="checkbox" checked>
+                        Samsung
+                    </label>
+
+                    <label class="check-item">
+                        <input type="checkbox" checked>
+                        Apple
+                    </label>
+
+                    <label class="check-item">
+                        <input type="checkbox" checked>
+                        Huawei
+                    </label>
+
+                    <label class="check-item">
+                        <input type="checkbox">
+                        Lenovo
+                    </label>
+
+                    <span class="see-all">See all</span>
+                </div>
+
+                <!-- FEATURES -->
+                <div class="filter-block">
+                    <div class="filter-title">
+                        <h4>Features</h4>
+                    </div>
+
+                    <label class="check-item">
+                        <input type="checkbox" checked>
+                        Metallic
+                    </label>
+
+                    <label class="check-item">
+                        <input type="checkbox">
+                        Plastic cover
+                    </label>
+
+                    <label class="check-item">
+                        <input type="checkbox">
+                        8GB Ram
+                    </label>
+
+                    <label class="check-item">
+                        <input type="checkbox">
+                        Super power
+                    </label>
+
+                    <label class="check-item">
+                        <input type="checkbox">
+                        Large Memory
+                    </label>
+
+                    <span class="see-all">See all</span>
+                </div>
+
+                <!-- PRICE RANGE -->
+                <div class="filter-block">
+                    <div class="filter-title">
+                        <h4>Price range</h4>
+                    </div>
+
+                    <div class="price-inputs">
+                        <input type="number" placeholder="Min">
+                        <input type="number" placeholder="Max">
+                    </div>
+
+                    <button class="apply-btn">Apply</button>
+                </div>
+
+                <!-- CONDITION -->
+                <div class="filter-block">
+                    <div class="filter-title">
+                        <h4>Condition</h4>
+                    </div>
+
+                    <label class="radio-item">
+                        <input type="radio" name="condition" checked>
+                        Any
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="condition">
+                        Brand new
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="condition">
+                        Old items
+                    </label>
+                </div>
+
+                <!-- RATINGS -->
+                <div class="filter-block">
+                    <div class="filter-title">
+                        <h4>Ratings</h4>
+                    </div>
+
+                    <label class="check-item">⭐⭐⭐⭐⭐</label>
+                    <label class="check-item">⭐⭐⭐⭐☆</label>
+                    <label class="check-item">⭐⭐⭐☆☆</label>
+                </div>
+
+            </aside>
+
+
+            <!-- RIGHT PRODUCTS AREA -->
+            <section class="products-area">
+
+                <!-- TOP BAR -->
+                <div class="products-topbar">
+                    <p>12,911 items in <strong>Mobile accessory</strong></p>
+
+                    <div class="topbar-actions">
+                        <label><input type="checkbox"> Verified only</label>
+                        <select>
+                            <option>Featured</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- PRODUCT CARD -->
+
+                <div class="product-card">
+                    <img src="../assets/Image/tech/mobile.png" alt="Product Image" class="product-img">
+
+                    <div class="product-info">
+                        <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+
+                        <div class="price-row">
+                            <span class="price">$998.00</span>
+                            <span class="old-price">$1128.00</span>
+                        </div>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐☆ <span>7.5</span> · 154 orders ·
+                            <span class="green">Free Shipping</span>
+                        </div>
+
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+
+                        <a href="product-detail.html" class="details-link">
+                            View details
+                        </a>
+                    </div>
+
+                    <button class="wishlist">♡</button>
+                </div>
+                <div class="product-card">
+                    <img src="../assets/Image/tech/mobile.png" alt="Product Image" class="product-img">
+
+                    <div class="product-info">
+                        <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+
+                        <div class="price-row">
+                            <span class="price">$998.00</span>
+                            <span class="old-price">$1128.00</span>
+                        </div>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐☆ <span>7.5</span> · 154 orders ·
+                            <span class="green">Free Shipping</span>
+                        </div>
+
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+
+                        <a href="product-detail.html" class="details-link">
+                            View details
+                        </a>
+                    </div>
+
+                    <button class="wishlist">♡</button>
+                </div>
+                <div class="product-card">
+                    <img src="../assets/Image/tech/mobile.png" alt="Product Image" class="product-img">
+
+                    <div class="product-info">
+                        <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+
+                        <div class="price-row">
+                            <span class="price">$998.00</span>
+                            <span class="old-price">$1128.00</span>
+                        </div>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐☆ <span>7.5</span> · 154 orders ·
+                            <span class="green">Free Shipping</span>
+                        </div>
+
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+
+                        <a href="product-detail.html" class="details-link">
+                            View details
+                        </a>
+                    </div>
+
+                    <button class="wishlist">♡</button>
+                </div>
+                <div class="product-card">
+                    <img src="../assets/Image/tech/mobile.png" alt="Product Image" class="product-img">
+
+                    <div class="product-info">
+                        <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+
+                        <div class="price-row">
+                            <span class="price">$998.00</span>
+                            <span class="old-price">$1128.00</span>
+                        </div>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐☆ <span>7.5</span> · 154 orders ·
+                            <span class="green">Free Shipping</span>
+                        </div>
+
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+
+                        <a href="product-detail.html" class="details-link">
+                            View details
+                        </a>
+                    </div>
+
+                    <button class="wishlist">♡</button>
+                </div>
+                <div class="product-card">
+                    <img src="../assets/Image/tech/mobile.png" alt="Product Image" class="product-img">
+
+                    <div class="product-info">
+                        <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+
+                        <div class="price-row">
+                            <span class="price">$998.00</span>
+                            <span class="old-price">$1128.00</span>
+                        </div>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐☆ <span>7.5</span> · 154 orders ·
+                            <span class="green">Free Shipping</span>
+                        </div>
+
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+
+                        <a href="product-detail.html" class="details-link">
+                            View details
+                        </a>
+                    </div>
+
+                    <button class="wishlist">♡</button>
+                </div>
+                <div class="product-card">
+                    <img src="../assets/Image/tech/mobile.png" alt="Product Image" class="product-img">
+
+                    <div class="product-info">
+                        <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+
+                        <div class="price-row">
+                            <span class="price">$998.00</span>
+                            <span class="old-price">$1128.00</span>
+                        </div>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐☆ <span>7.5</span> · 154 orders ·
+                            <span class="green">Free Shipping</span>
+                        </div>
+
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+
+                        <a href="product-detail.html" class="details-link">
+                            View details
+                        </a>
+                    </div>
+
+                    <button class="wishlist">♡</button>
+                </div>
+
+            </section>
+
+        </div>
+        <div class="pagination-bar">
+            <div class="show-count">
+                <span>Show</span>
+                <select>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                </select>
+            </div>
+
+            <div class="pages">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">›</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="news-letter">
+            <h3>Subscribe on our newsletter</h3>
+            <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+
+            <form class="newsletter-form">
+                <div class="input-wrapper">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+
+        </div>
+        <div class="main-footer">
+            <div class="footer-container">
+
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <img src="../assets/Layout/Brand/logo-colored.png" alt="">
+                    <p>Best information about the company goes here but now lorem ipsum is</p>
+
+                    <div class="social-icons">
+                        <img src="facebook.svg" alt="">
+                        <img src="twitter.svg" alt="">
+                        <img src="linkedin.svg" alt="">
+                        <img src="instagram.svg" alt="">
+                        <img src="youtube.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- About -->
+                <div class="footer-links">
+                    <h4>About</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Find store</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Blogs</a>
+                </div>
+
+                <!-- Partnership -->
+                <div class="footer-links">
+                    <h4>Partnership</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Find store</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Blogs</a>
+                </div>
+
+                <!-- Information -->
+                <div class="footer-links">
+                    <h4>Information</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Money Refund</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Contact us</a>
+                </div>
+
+                <!-- For Users -->
+                <div class="footer-links">
+                    <h4>For users</h4>
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <a href="#">Settings</a>
+                    <a href="#">My Orders</a>
+                </div>
+
+                <!-- Get App -->
+                <div class="footer-app">
+                    <h4>Get app</h4>
+                    <img src="../assets/Layout/Misc/Group.png" class="app-btn" alt="">
+                    <img src="../assets/Layout/Misc/market-button.png" class="app-btn" alt="">
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-flex">
+                    <p>© 2023 Ecommerce. </p>
+                    <div class="lang-selector">
+                        <img src="../assets/Layout1/Image/flags/US@2x.png" alt="">
+                        <select>
+                            <option>English</option>
+                            <option>Deutsch</option>
+                            <option>Français</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

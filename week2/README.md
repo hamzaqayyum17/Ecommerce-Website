@@ -13,3 +13,4 @@ Build the desktop version of the Home Page based on Figma.
 
 # GitHub Repository
 https://github.com/hamzaqayyum17/Ecommerce-Website/tree/main/week2
+week2
