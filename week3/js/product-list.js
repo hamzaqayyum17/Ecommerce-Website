@@ -1,22 +1,32 @@
-const list = document.getElementById("productsList");
+const productsList = document.getElementById("productsList");
 
-function renderProducts(items) {
-  list.innerHTML = "";
+productsList.innerHTML = products.map(product => `
+  <div class="product-card">
 
-  items.forEach(product => {
-    list.innerHTML += `
-      <div class="product-card">
-        <img src="${product.image}">
-        <div class="product-info">
-          <h4>$${product.price}</h4>
-          <p>${product.name}</p>
-          <a href="product-detail.html?id=${product.id}">
-            View details
-          </a>
-        </div>
+    <img src="${product.image}" class="product-img">
+
+    <div class="product-info">
+      <h4>${product.name}</h4>
+
+      <div class="price-row">
+        <span class="price">$${product.price}</span>
+        ${product.oldPrice ? `<span class="old-price">$${product.oldPrice}</span>` : ""}
       </div>
-    `;
-  });
-}
 
-renderProducts(products);
+      <div class="rating">
+        ⭐⭐⭐⭐☆ <span>${product.rating}</span> · ${product.orders} orders ·
+        <span class="green">${product.freeShipping ? "Free Shipping" : ""}</span>
+      </div>
+
+      <p class="desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <a href="product-detail.html?id=${product.id}" class="details-link">
+        View details
+      </a>
+    </div>
+
+    <button class="wishlist">♡</button>
+  </div>
+`).join("");
