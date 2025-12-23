@@ -7,7 +7,9 @@ const products = [
     rating: 7.5,
     orders: 154,
     freeShipping: true,
-    image: "../assets/Image/tech/mobile.png"
+    image: "../assets/Image/tech/mobile.png",
+    description: "High quality DSLR for photography enthusiasts.",
+    type: "Camera"
   },
   {
     id: 2,
@@ -17,6 +19,8 @@ const products = [
     rating: 7.5,
     orders: 154,
     freeShipping: true,
-    image: "../assets/Image/tech/mobile.png"
+    image: "../assets/Image/tech/mobile.png",
+    description: "Durable action camera for sports and outdoor use.",
+    type: "Action Camera"
   }
 ];

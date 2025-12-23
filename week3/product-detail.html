@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../week1/style.css">
     <link rel="stylesheet" href="../week2/style.css">
     <link rel="stylesheet"
@@ -19,13 +20,13 @@
             </div>
 
             <div class="search-bar">
-                <input type="text" placeholder="Search">
-                <select>
-                    <option>All category</option>
-                    <option>Category 1</option>
-                    <option>Category 2</option>
+                <input id="searchInput" type="text" placeholder="Search">
+                <select id="categorySelect">
+                    <option value="all">All category</option>
+                    <option value="1">Category 1</option>
+                    <option value="2">Category 2</option>
                 </select>
-                <button>Search</button>
+                <button id="searchBtn" type="button">Search</button>
             </div>
 
             <div class="actions">
@@ -85,9 +86,115 @@
     </header>
     <main class="product-detail-page">
 
-        <div class="product-detail-container" id="productDetail">
-            <!-- JS yahan product inject karegi -->
-        </div>
+        <section class="product-main">
+
+            <!-- LEFT: IMAGE GALLERY -->
+            <div class="product-gallery">
+                <img src="../assets/Image/cloth/shirt.png" class="main-image" id="mainImage">
+
+                <div class="thumbs">
+                    <img src="../assets/Image/cloth/shirt.png">
+                    <img src="../assets/Image/cloth/shirt.png">
+                    <img src="../assets/Image/cloth/shirt.png">
+                    <img src="../assets/Image/cloth/shirt.png">
+                </div>
+            </div>
+
+            <!-- CENTER: PRODUCT INFO -->
+            <div class="product-details">
+                <span class="stock">✔ In stock</span>
+
+                <h1 id="productTitle">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+
+                <div class="rating">⭐⭐⭐⭐☆ <span id="ratingNumber">9.3</span> · 32 reviews · 154 sold</div>
+
+                <div class="price-box" id="priceBox">
+                    <div>$98.00 <small>50-100 pcs</small></div>
+                    <div>$90.00 <small>100-700 pcs</small></div>
+                    <div>$78.00 <small>700+ pcs</small></div>
+                </div>
+
+                <ul class="specs" id="specsList">
+                    <li><strong>Price:</strong> Negotiable</li>
+                    <li><strong>Type:</strong> Classic shoes</li>
+                    <li><strong>Material:</strong> Plastic material</li>
+                    <li><strong>Design:</strong> Modern nice</li>
+                    <li><strong>Warranty:</strong> 2 years full warranty</li>
+                </ul>
+            </div>
+
+            <!-- RIGHT: SELLER BOX -->
+            <aside class="seller-box">
+                <div class="seller-head">
+                    <span class="logo">R</span>
+                    <div>
+                        <h4>Supplier</h4>
+                        <p>Guanjoi Trading LLC</p>
+                    </div>
+                </div>
+
+                <p>🇩🇪 Germany, Berlin</p>
+                <p>✔ Verified Seller</p>
+                <p>🌍 Worldwide shipping</p>
+
+                <button class="btn-primary">Send inquiry</button>
+                <button class="btn-outline">Seller’s profile</button>
+
+                <a href="#" class="save">♡ Save for later</a>
+            </aside>
+
+        </section>
+        <section class="product-tabs">
+
+            <div class="tabs">
+                <button class="active">Description</button>
+                <button>Reviews</button>
+                <button>Shipping</button>
+                <button>About seller</button>
+            </div>
+
+            <div class="tab-content">
+                <p id="productDesc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore.
+                </p>
+
+                <table class="spec-table">
+                    <tr>
+                        <td>Model</td>
+                        <td>#8786867</td>
+                    </tr>
+                    <tr>
+                        <td>Style</td>
+                        <td>Classic style</td>
+                    </tr>
+                    <tr>
+                        <td>Certificate</td>
+                        <td>ISO-8989212</td>
+                    </tr>
+                    <tr>
+                        <td>Memory</td>
+                        <td>36GB RAM</td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+        <section class="related-products">
+            <h3>Related products</h3>
+
+            <div class="related-grid">
+                <div class="r-item">
+                    <img src="../assets/Image/tech/watch.png">
+                    <p>Xiaomi Redmi 8 Original</p>
+                    <span>$32.00-$40.00</span>
+                </div>
+
+                <!-- repeat -->
+            </div>
+        </section>
+
+
 
     </main>
     <footer>

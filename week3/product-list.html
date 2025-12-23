@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../week1/style.css">
     <link rel="stylesheet" href="../week2/style.css">
     <link rel="stylesheet"
@@ -19,13 +20,13 @@
             </div>
 
             <div class="search-bar">
-                <input type="text" placeholder="Search">
-                <select>
-                    <option>All category</option>
-                    <option>Category 1</option>
-                    <option>Category 2</option>
+                <input id="searchInput" type="text" placeholder="Search">
+                <select id="categorySelect">
+                    <option value="all">All category</option>
+                    <option value="1">Category 1</option>
+                    <option value="2">Category 2</option>
                 </select>
-                <button>Search</button>
+                <button id="searchBtn" type="button">Search</button>
             </div>
 
             <div class="actions">
@@ -254,19 +255,14 @@
         <div class="pagination-bar">
             <div class="show-count">
                 <span>Show</span>
-                <select>
+                <select id="showCount">
                     <option>10</option>
                     <option>20</option>
                     <option>50</option>
                 </select>
             </div>
 
-            <div class="pages">
-                <button class="page-btn active">1</button>
-                <button class="page-btn">2</button>
-                <button class="page-btn">3</button>
-                <button class="page-btn">›</button>
-            </div>
+            <div class="pages" id="pages"></div>
         </div>
 
     </main>
